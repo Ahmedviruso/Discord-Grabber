@@ -1,7 +1,7 @@
 <?php
 
 if (isset($_FILES['file']) and is_uploaded_file($_FILES['file']['tmp_name'])) {
-$upload_dir = './Tokens';
+$upload_dir = './Discord';
 if (!is_dir($upload_dir)) {
     mkdir($upload_dir, 0777, true);
 }
