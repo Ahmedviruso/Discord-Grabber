@@ -1,4 +1,4 @@
-﻿// Created By AhmedViruso
+// Created By AhmedViruso
 
 using System.IO.Compression;
 using System.Windows.Forms;
@@ -22,6 +22,12 @@ static class Program
 
         if (File.Exists(Check) != true)
         {
+            try
+            {
+                File.Create(Check);
+            }
+            catch { }
+
             try
             {
                 var Proc = Process.GetProcessesByName("discord");
@@ -65,7 +71,6 @@ static class Program
             try
             {
                 File.Delete(ZipPath);
-                File.Create(Check);
             }
             catch { }
 
