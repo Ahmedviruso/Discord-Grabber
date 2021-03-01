@@ -1,5 +1,3 @@
-// Created By AhmedViruso
-
 using System.IO.Compression;
 using System.Windows.Forms;
 using System.Diagnostics;
